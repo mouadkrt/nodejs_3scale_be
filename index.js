@@ -14,7 +14,7 @@ var ip = process.env.IP || process.env.OPENSHIFT_NODEJS_IP || '0.0.0.0';
 
 app.post('/', function(req, res) {
 
-    console.log("IAMSAPReceiptTransferExport_V1_BE received the following HTTP GET Request on / endpoint  :");
+    console.log("\n\n-------------------------\nIAMSAPReceiptTransferExport_V1_BE received the following HTTP GET Request on / endpoint  :");
 
     console.log("HTTP HEADER ");
     console.log(req.headers);

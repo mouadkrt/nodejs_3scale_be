@@ -4,6 +4,7 @@
   "description": "Backend simulating the http reply of the real IAM backend of the iamsapreceipttransferexport_v1 SOAP service to be used for camel transformation tests",
   "main": "index.js",
   "scripts": {
+    "start": "node index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
