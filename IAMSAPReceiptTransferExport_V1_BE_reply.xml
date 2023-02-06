@@ -207,4 +207,4 @@
         </Z_ARIBA_GR_TRANSFER.Response>
     </Z_ARIBA_GR_TRANSFERResponse>
 </SOAP-ENV:Body>
-</soap:Envelope>
+</SOAP-ENV:Envelope>
