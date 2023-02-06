@@ -21,12 +21,12 @@ app.post('/', bodyParser.text({type: '*/*'}), function(req, res) {
 
     console.log("\nHTTP BODY : %j", req.body);
 
-    //const xml_content = fs.readFileSync("IAMSAPReceiptTransferExport_V1_BE_reply.xml");
-    //res.setHeader('content-type', 'text/xml; charset=utf-8');
-    //res.send(xml_content);
-    newBackendBoy = req.body + "\n(This string is added by NodeJs backend to req.body)";
-    console.log("Sending : \n" + newBackendBoy);
-    res.send(newBackendBoy);
+    const xml_content = fs.readFileSync("IAMSAPReceiptTransferExport_V1_BE_reply.xml");
+    res.setHeader('content-type', 'text/xml; charset=utf-8');
+    res.send(xml_content);
+    //newBackendBoy = req.body + "\n(This string is added by NodeJs backend to req.body)";
+    //console.log("Sending : \n" + newBackendBoy);
+    //res.send(newBackendBoy);
 
 
 });
