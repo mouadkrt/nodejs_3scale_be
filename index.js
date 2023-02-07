@@ -6,13 +6,14 @@ var app = express();
 
 
 const bodyParser = require('body-parser');
-//require('body-parser-xml')(bodyParser);
-//app.use(bodyParser.xml({inflate:true}));
+require('body-parser-xml')(bodyParser);
+app.use(bodyParser.xml({inflate:true}));
 
 var ip = process.env.IP || process.env.OPENSHIFT_NODEJS_IP || '0.0.0.0';
 
 
-app.post('/', bodyParser.text({type: '*/*'}), function(req, res) {
+//app.post('/', bodyParser.text({type: '*/*'}), function(req, res) {
+app.post('/', function(req, res) {
 
     console.log("\n\n-------------------------\nIAMSAPReceiptTransferExport_V1_BE received the following HTTP GET Request on / endpoint  :");
 
